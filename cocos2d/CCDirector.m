@@ -100,6 +100,7 @@ extern NSString * cocos2dVersion(void);
 @synthesize secondsPerFrame = secondsPerFrame_;
 @synthesize scheduler = scheduler_;
 @synthesize actionManager = actionManager_;
+@synthesize isActive = isActive_;
 
 //
 // singleton stuff

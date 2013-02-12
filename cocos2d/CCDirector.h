@@ -152,6 +152,9 @@ and when to execute the Scenes.
 	
 	/*  OpenGLView. On iOS it is a copy of self.view */
 	CCGLView		*view_;
+	
+	/* isActive flag */
+	BOOL isActive_;
 }
 
 /** returns the cocos2d thread.
@@ -178,6 +181,9 @@ and when to execute the Scenes.
 @property (nonatomic,readonly) NSUInteger	totalFrames;
 /** seconds per frame */
 @property (nonatomic, readonly) ccTime secondsPerFrame;
+
+/** active flag */
+@property (nonatomic, readwrite, assign) BOOL isActive;
 
 /** Whether or not the replaced scene will receive the cleanup message.
  If the new scene is pushed, then the old scene won't receive the "cleanup" message.
